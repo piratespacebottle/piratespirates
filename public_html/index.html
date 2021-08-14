@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Space Pirate Bottle</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="custom/override.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="row main-menu">
+						<div class="col-4">
+							<a href="#">
+								<img src="images/Logo.png" alt="Space Pirate Bottle" title="Space Pirate Bottle">
+							</a>
+						</div>
+						<div class="col-8">
+							<div class="row">
+								<div class="col-6">
+									<ul class="nav">
+										<li class="nav-item">
+											<a class="nav-link active" href="#about">About</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#roadmap">Roadmap</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#faq">F.A.Q</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#team">Team</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<a class="btn ">Connect Wallet</a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="row about" id="about">
+						<div class="col">
+							<div style="position:absolute; top:0; left:0; width: 100%; height: 100%; overflow: hidden">
+								<div class="scroll1" style="position:absolute; top:0; left:0; width: 100%; height: 100%; margin-top: -300px">
+									<img src="images/garbage_min.png" style="position:absolute; top: 20%">
+								</div>
+							</div>
+							<h1>What is «Space Pirate Bottles»?</h1>
+							<div class="col-12">
+								<div style="padding-bottom: 400px"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="row roadmap position-relative" id="roadmap">
+						<div style="position:absolute; top:0; left:0; width: 100%; height: 100%">
+							<img src="images/bottle1.png" class="fly">
+							<img src="images/bottle1.png" class="fly">
+							<img src="images/bottle1.png" class="fly">
+						</div>
+						<div class="col-12">
+							<h2>Roadmap</h2>
+						</div>
+						<div class="col-12">
+							<div style="padding-bottom: 800px"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="row faq" id="faq">
+						<div class="col">
+							<h2>Space Pirate Bottles F.A.Q</h2>
+						</div>
+					</div>
+					<div class="row team" id="team">
+						<div class="col">
+							<h2>Our Team</h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="row bottom-menu">
+						<div class="col-4">
+							<a href="#">
+								<img src="images/Logo_bottom.png" alt="Space Pirate Bottle" title="Space Pirate Bottle">
+							</a>
+						</div>
+						<div class="col-4">
+
+						</div>
+						<div class="col-4">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+				
+		</div>
+		
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="custom/scripts.js"></script>
+		<script>
+			$('.fly').each(function(){
+				Pirates.flyBlock(this, 10);
+			});
+			$('.scroll1').each(function(){
+				Pirates.scrollBlock(this, .3);
+			});
+			//Pirates.run();
+		</script>
+	</body>
+</html>
