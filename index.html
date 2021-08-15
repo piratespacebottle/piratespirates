@@ -11,50 +11,86 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12">
-					<div class="row main-menu">
-						<div class="col-12 col-md-4 position-relative">
-							<button class="btn btn-icon menu-toggle d-block d-md-none float-right" id="menu-toggle"><i class="sprite sprite-menu"></i></button>
-							<a class="top-logo" href="#">
-								<img src="images/Logo.png" alt="Space Pirate Bottle" title="Space Pirate Bottle">
-							</a>
-
-						</div>
-						<div class="col-12 col-md-8 d-none d-md-block">
-							<div class="row">
-								<div class="col-6">
-									<ul class="nav">
-										<li class="nav-item">
-											<a class="nav-link active" href="#about">About</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#roadmap">Roadmap</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#faq">F.A.Q</a>
-										</li>
-										<li class="nav-item">
-											<a class="nav-link" href="#team">Team</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-6">
-									<a class="btn ">Connect Wallet</a>
+					<div class="top-holder">
+						<div class="row main-menu" id="main-menu-container">
+							<div class="col-12 col-md-4 position-relative">
+								<button class="btn btn-icon menu-toggle d-block d-md-none float-right" id="menu-toggle"><i class="sprite sprite-menu-close"></i></button>
+								<a class="top-logo" href="#">
+									<img src="images/Logo.png" alt="Space Pirate Bottle" title="Space Pirate Bottle">
+								</a>
+							</div>
+							<div class="col-12 col-md-8 d-none d-md-block" id="menu-modal">
+								<div class="row">
+									<div class="col-12 col-md-8">
+										<ul class="nav">
+											<li class="nav-item">
+												<a class="nav-link active" href="#about">About</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#roadmap">Roadmap</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#faq">F.A.Q</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#team">Team</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-4">
+										<a class="btn btn-vallet">Connect Wallet</a>
+									</div>
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<div class="col-12">
 					<div class="row">
 						<div class="col-12 about" id="about">
-							<div style="position:absolute; top:0; left:0; width: 100%; height: 100%; overflow: hidden">
+							<div class="parallax-holder" style="position:absolute; top:0; left:0; width: 100%; height: 100%; overflow: hidden">
 								<div class="scroll1" style="position:absolute; top:0; left:0; width: 100%; height: 100%; margin-top: -300px">
 									<img src="images/garbage_min.png" style="position:absolute; top: 20%">
 								</div>
 							</div>
-							<h1>What is «Space Pirate Bottles»?</h1>
+							<div class="overlay" id="overlay" style="display: none">
+								<div class="about-details">
+									<div class="title">What is «Space Pirate Bottles»?</div>
+									<div class="scroll-content">
+										<p>Our hero loves adventures and is
+always ready for reckless schemes.
+For years he has been dreaming
+of wealth and fame, surfing space
+in search of the most valued
+treasures. Unsurprisingly, he is the
+one who decided to search for
+numerous pieces of a large puzzle.
+He was the first to realize they
+were part of an ancient map
+compiled many centuries
+ago by beings of a civilization.</p>
+
+<p>What was hidden on the map?
+Our hero loves adventures and is
+always ready for reckless schemes.
+For years he has been dreaming
+of wealth and fame, surfing space
+in search of the most valued
+treasures. Unsurprisingly, he is the
+one who decided to search for
+numerous pieces of a large puzzle.
+He was the first to realize they
+were part of an ancient map
+compiled many centuries
+ago by beings of a civilization.</p>
+									</div>
+									<div class="close-holder">
+										<button class="btn btn-close">Close and return</button>
+									</div>
+								</div>
+							</div>
 							<div class="content">
+								<h1>What is «Space Pirate Bottles»?</h1>
 								<div class="hero"></div>
 								<button class="btn btn-main">Go to information</button>
 								<div class="notify">* Max 20 visitors per transaction</div>
@@ -78,7 +114,7 @@
 									</div>
 								</form>
 							</div>
-							<div class="sn-holder d-flex justify-content-center">
+							<div class="sn-holder d-flex justify-content-center" style="display: none">
 								<span class="sprite sprite-follow">Follow us</span>
 								<a><i class="sprite sprite-discord"></i></a>
 								<a><i class="sprite sprite-twitter"></i></a>
@@ -87,15 +123,14 @@
 					</div>
 				</div>
 				<div class="col-12">
-					<i class="icon icon-action"></i>
-					<div class="row position-relative">
+					<div class="row position-relative roadmap">
 						<div style="position:absolute; top:0; left:0; width: 100%; height: 100%">
-							<img src="images/bottle1.png" class="fly">
-							<img src="images/bottle1.png" class="fly">
-							<img src="images/bottle1.png" class="fly">
+							<img class="fly-bottle fly" src="images/bottle1.png" >
+							<img class="fly-bottle fly" src="images/bottle1.png" >
+							<img class="fly-bottle fly" src="images/bottle1.png" >
 						</div>
 						<i class="sprite sprite-action"></i>
-						<div class="col-12 roadmap" id="roadmap">
+						<div class="col-12" id="roadmap">
 							<div class="content">
 								<h2>Roadmap</h2>
 								<i class="cap cap-top"></i>
@@ -220,32 +255,40 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 bottom-menu">
-					<div class="row">
-						<div class="col-4">
-							<a class="logo-bottom" href="#">
-								<img src="images/Logo_bottom.png" alt="Space Pirate Bottle" title="Space Pirate Bottle">
-							</a>
+				<div class="col-12 footer">
+					<div class="content">
+						<div class="row">
+							<div class="col-12">
+								<a class="logo-bottom" href="#">
+									<img src="images/Logo_bottom.png" alt="Space Pirate Bottle" title="Space Pirate Bottle">
+								</a>
+								<i class="delimiter"></i>
+							</div>
+							<div class="col-6 bottom-menu">
+								<div class="content">
+									<h5>Site navigation</h5>
+									<nav class="nav flex-column">
+										<a class="nav-link active" href="#">About</a>
+										<a class="nav-link" href="#">Roadmap</a>
+										<a class="nav-link" href="#">F.A.Q</a>
+										<a class="nav-link" href="#">Team</a>
+									</nav>
+								</div>
+							</div>
+							<div class="col-6 sn">
+								<div class="content">
+									<h5>Community</h5>
+									<nav class="nav flex-column">
+										<a class="nav-link" href="#">Twitter</a>
+										<a class="nav-link" href="#">Discord</a>
+									</nav>
+								</div>
+							</div>
 						</div>
-						<div class="col-4">
-							<h5>Site navigation</h5>
-							<nav class="nav flex-column">
-								<a class="nav-link active" href="#">About</a>
-								<a class="nav-link active" href="#">Roadmap</a>
-								<a class="nav-link active" href="#">F.A.Q</a>
-								<a class="nav-link active" href="#">Team</a>
-							</nav>
+						<div class="credit">
+							<i class="delimiter"></i>
+							© Space Pirate Botles 2021.<br> All rights reserved
 						</div>
-						<div class="col-4">
-							<h5>Community</h5>
-							<nav class="nav flex-column">
-								<a class="nav-link active" href="#">Twitter</a>
-								<a class="nav-link active" href="#">Discord</a>
-							</nav>
-						</div>
-					</div>
-					<div class="footer">
-						© Space Pirate Botles 2021.<br> All rights reserved
 					</div>
 				</div>
 			</div>

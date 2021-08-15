@@ -8,7 +8,8 @@ body {
 	color: #FFF;
 	text-transform: uppercase;
 	font-weight: bold;
-	background-color: transparent
+	background-color: transparent;
+	white-space: normal;
 }
 
 .btn-main {
@@ -38,6 +39,31 @@ border-radius: 34px;
 	border-radius: 0;
 }
 
+.btn-close {
+	width: 208px;
+	height: 40px;
+	text-transform: uppercase;
+	font-size: 15px;
+	background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(4, 1, 4, 0) 0.01%, #2C131D 100%);
+	border: 3px solid #9F3761;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 34px;
+	font-weight: bold;
+}
+
+.btn-vallet {
+	width: 200px;
+	height: 40px;
+	background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(4, 1, 4, 0) 0.01%, #182D3F 100%);
+	border: 3px solid #37729F;
+	box-sizing: border-box;
+	border-radius: 34px;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
 .sprite {
 	display: block;
 	background: transparent url('../images/sprites.png')
@@ -47,6 +73,12 @@ border-radius: 34px;
 	width: 22px;
 	height: 22px;
 	background-position: -27px -1px;
+}
+
+.sprite.sprite-menu-close {
+	width: 22px;
+	height: 22px;
+	background-position: -27px -24px;
 }
 
 .sn-holder .sprite-follow {
@@ -63,6 +95,71 @@ border-radius: 34px;
 	width: 20px;
 	height: 16px;
 	background-position: -71px -1px;
+}
+
+.sprite.sprite-action {
+	width: 26px;
+	height: 48px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(4, 1, 4, 0.8);
+	width: 100%;
+	height: 100%;
+}
+
+.overlay .about-details {
+	padding: 26px 22px 0 30px;
+}
+
+.about-details .title {
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 26px;
+}
+
+.overlay .scroll-content {
+	overflow-y: scroll;
+}
+
+.overlay .scroll-content::-webkit-scrollbar{
+	width: 4px;
+	height: 4px;
+}
+.overlay .scroll-content::-webkit-scrollbar-thumb{
+	background: rgba(255, 255, 255, 0.74);
+}
+.overlay .scroll-content::-webkit-scrollbar-thumb:hover{
+	background: rgba(255, 255, 255, 0.74);
+}
+.overlay .scroll-content::-webkit-scrollbar-track{
+	background: rgba(255, 255, 255, 0.14);
+	border-radius: 4px;
+}
+
+.overlay .scroll-content {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.74) rgba(255, 255, 255, 0.14);
+}
+
+.about-details .scroll-content {
+	font-size: 14px;
+    padding: 0 30px 0 30px;
+    text-align: center;
+    max-height: 330px;
+}
+
+.about-details .close-holder {
+	margin-top: 32px;
+}
+
+.about-details .close-holder button {
+	display: block;
+	margin: 0 auto;
 }
 
 h1, h2 {
@@ -82,11 +179,11 @@ h1, h2 {
 	width: 156px;
 }
 
-.main-menu .nav-link {
+.nav-link {
 	color: #454445;
 }
 
-.main-menu .nav-link.active {
+.nav-link.active {
 	color: #FFFFFF;
 }
 
@@ -95,9 +192,30 @@ h1, h2 {
 	margin-right: 2px;
 }
 
+#menu-modal .nav {
+	padding-top: 46px;
+}
+
+#menu-modal .nav-item {
+	width: 100%;
+	text-align: center;
+}
+
+#menu-modal .nav-link {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: bold;
+}
+
+#menu-modal .btn-vallet {
+	margin: 46px auto 0;
+	display: block;
+}
+
 .about {
 	padding-top: 26px;
 	background-image: url('../images/nebula1.jpeg');
+	min-height: 578px;
 }
 .about .content {
 	padding: 0 20px;
@@ -122,11 +240,13 @@ h1, h2 {
 	background: rgba(14, 32, 46, 0.86);
 	padding: 20px;
 }
+
 .count-form .delimiter {
 	display: block;
 	height: 2px;
 	background: linear-gradient(90deg, rgba(95, 150, 183, 0) 0%, rgba(255, 255, 255, 0.28) 50%, rgba(95, 150, 183, 0) 100%);
 }
+
 .btn-outline-secondary {
 	width: 45px;
 	height: 33px;
@@ -178,6 +298,17 @@ h1, h2 {
 
 .sn-holder .sprite-discord i, .sn-holder .sprite-twitter i {
 	margin-top: 3px;
+}
+
+.roadmap .sprite-action {
+	position: absolute;
+	left: 50%;
+	margin-left: -13px;
+	top: -22px;
+}
+
+.roadmap .fly-bottle {
+	width: 94px;
 }
 
 .roadmap .content {
@@ -289,6 +420,11 @@ h1, h2 {
 	opacity: .4;
 }
 
+.faq .card .card-header .btn {
+	font-size: 16px;
+	text-align: left;
+}
+
 .team {
 	padding-top: 36px;
 }
@@ -322,13 +458,64 @@ h1, h2 {
 	font-size: 14px;
 }
 
-.bottom-menu {
+.footer {
 	background-image: url('../images/nebula1.jpeg');
+	padding-top: 40px;
 }
 
-.bottom-menu .logo-bottom img{
+.footer .logo-bottom {
+	display: block;
+	width: 184px;
+	margin: 0 auto;
+}
+
+.footer .logo-bottom img {
 	width: 184px;
 }
+
+.footer > .content {
+	padding: 40px 20px;
+}
+
+.footer .logo-bottom {
+	width: 184px;
+}
+
+.footer .delimiter {
+	display: block;
+	height: 2px;
+	width: 100%;
+	background: #FFFFFF;
+	opacity: 0.14;
+	margin: 27px 0;
+}
+
+.footer .bottom-menu .content, .footer .sn .content {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.footer h5 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.footer .nav {
+	margin-top: 18px;
+}
+
+.footer .nav-link {
+	padding: 0px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.footer .credit {
+	text-align: center;
+	font-size: 12px;
+	color: rgba(255, 255, 255, .54)
+}
+
 @media (min-width: 768px) {
 	h1, h2 {
 		text-align: center;
@@ -342,8 +529,48 @@ h1, h2 {
 	h2 {
 		font-size: 54px;
 	}
+	
+	.top-holder {
+		max-width: 900px;
+		margin: 0 auto;
+	}
 
 	.main-menu .nav {
 		padding-top: 30px;	
+	}
+	
+	.top-logo {
+		margin: 18px 0;
+	}
+	
+	.top-logo img {
+		width: 234px;
+	}
+	
+	#menu-modal .nav-item {
+		width: auto;
+	}
+	
+	#menu-modal .nav-link {
+		font-size: 20px;
+		line-height: 1;
+		font-weight: bold;
+	}
+	
+	#menu-modal .nav-link.active {
+		position: relative;
+	}
+	
+	#menu-modal .nav-link.active:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 38px;
+		height: 32px;
+		background: transparent url('../images/sprites.png') -5px -145px;
+		top: 61px;
+		left: 50%;
+		margin-left: -19px;
+		z-index: 1;
 	}
 }
