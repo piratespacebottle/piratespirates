@@ -12,12 +12,14 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="row main-menu">
-						<div class="col-4">
-							<a href="#">
+						<div class="col-12 col-md-4 position-relative">
+							<button class="btn btn-icon menu-toggle d-block d-md-none float-right" id="menu-toggle"><i class="sprite sprite-menu"></i></button>
+							<a class="top-logo" href="#">
 								<img src="images/Logo.png" alt="Space Pirate Bottle" title="Space Pirate Bottle">
 							</a>
+
 						</div>
-						<div class="col-8">
+						<div class="col-12 col-md-8 d-none d-md-block">
 							<div class="row">
 								<div class="col-6">
 									<ul class="nav">
@@ -40,81 +42,223 @@
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 				</div>
 				<div class="col-12">
-					<div class="row about" id="about">
-						<div class="col">
+					<div class="row">
+						<div class="col-12 about" id="about">
 							<div style="position:absolute; top:0; left:0; width: 100%; height: 100%; overflow: hidden">
 								<div class="scroll1" style="position:absolute; top:0; left:0; width: 100%; height: 100%; margin-top: -300px">
 									<img src="images/garbage_min.png" style="position:absolute; top: 20%">
 								</div>
 							</div>
 							<h1>What is «Space Pirate Bottles»?</h1>
-							<div class="col-12">
-								<div style="padding-bottom: 400px"></div>
+							<div class="content">
+								<div class="hero"></div>
+								<button class="btn btn-main">Go to information</button>
+								<div class="notify">* Max 20 visitors per transaction</div>
+								<form class="count-form">
+									<div class="row">
+										<div class="col-12">
+											<div class="input-group mb-3">
+												<div class="input-group-prepend">
+													<button class="btn btn-outline-secondary" type="button" id="button-decrement"><i class="icon icon-minus"></i>-</button>
+												</div>
+												<input type="text" class="form-control" aria-label="Count" aria-describedby="button-addon2" value="1">
+												<div class="input-group-append">
+													<button class="btn btn-outline-secondary" type="button" id="button-increment"><i class="icon icon-plus"></i>+</button>
+												</div>
+											</div>
+											<i class="delimiter"></i>
+										</div>
+										<div class="col-12 justify-content-center">
+											<button class="btn btn-buy">Buy Now</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="sn-holder d-flex justify-content-center">
+								<span class="sprite sprite-follow">Follow us</span>
+								<a><i class="sprite sprite-discord"></i></a>
+								<a><i class="sprite sprite-twitter"></i></a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-12">
-					<div class="row roadmap position-relative" id="roadmap">
+					<i class="icon icon-action"></i>
+					<div class="row position-relative">
 						<div style="position:absolute; top:0; left:0; width: 100%; height: 100%">
 							<img src="images/bottle1.png" class="fly">
 							<img src="images/bottle1.png" class="fly">
 							<img src="images/bottle1.png" class="fly">
 						</div>
-						<div class="col-12">
-							<h2>Roadmap</h2>
-						</div>
-						<div class="col-12">
-							<div style="padding-bottom: 800px"></div>
+						<i class="sprite sprite-action"></i>
+						<div class="col-12 roadmap" id="roadmap">
+							<div class="content">
+								<h2>Roadmap</h2>
+								<i class="cap cap-top"></i>
+								<div class="stage">
+									<span class="value">10%</span>
+									<h3 class="stage-title">TREASURE HUNT CONTEST</h3>
+									<div class="stage-content">Find Space Pirate’s map piece in your NFT and get yourtreasure (up to 1ETH).</div>
+								</div>
+								<i class="delimiter"></i>
+								<div class="stage blue">
+									<span class="value">20%</span>
+									<h3 class="stage-title">FUNDING</h3>
+									<div class="stage-content">OpenSea Royalties to help us achieve our roadmap.</div>
+								</div>
+								<i class="delimiter"></i>
+								<div class="stage disabled">
+									<span class="value">30%</span>
+									<h3 class="stage-title">PROJECT APEDROP</h3>
+									<div class="stage-content">Airdrop Space Pirate Bottles to the community on a weekly basis for the first month.</div>
+								</div>
+								<i class="cap cap-bottom"></i>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-12">
-					<div class="row faq" id="faq">
-						<div class="col">
-							<h2>Space Pirate Bottles F.A.Q</h2>
+					<div class="row" >
+						<div class="col faq" id="faq">
+							<div class="content">
+								<h2>Space Pirate Bottles F.A.Q</h2>
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h5 class="mb-0">
+											<button class="btn" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
+												What is the «Space Pirate Bottle»?
+											</button>
+										</h5>
+									</div>
+
+									<div id="faq1" class="collapse" aria-labelledby="headingOne">
+										<div class="card-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h5 class="mb-0">
+											<button class="btn" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="true" aria-controls="faq2">
+												What is the «Space Pirate Bottle»?
+											</button>
+										</h5>
+									</div>
+
+									<div id="faq2" class="collapse" aria-labelledby="headingOne">
+										<div class="card-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="row team" id="team">
-						<div class="col">
+					<div class="row">
+						<div class="col team" id="team">
 							<h2>Our Team</h2>
+							<div class="row">
+								<div class="col-12">
+									<div class="card creator">
+										<img class="card-img-top" src="images/1.jpg" alt="TeamMate #1">
+										<div class="card-body">
+											<h5 class="card-title">TeamMate #1</h5>
+											<h6 class="card-subtitle mb-2">CREATOR AND ARTIST</h6>
+											<p class="card-text">
+												The whole collection is the
+												work of TeamMate #1
+												hand-drawn and colourful
+												style using Photoshop and
+												Adobe Illustrator
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="card coordinator">
+										<img class="card-img-top" src="images/2.jpg" alt="TeamMate #2">
+										<div class="card-body">
+											<h5 class="card-title">TeamMate #2</h5>
+											<h6 class="card-subtitle mb-2">COORDINATOR</h6>
+											<p class="card-text">
+												Believes in NFTs and their application on real world matters.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="card develop">
+										<img class="card-img-top" src="images/3.jpg" alt="TeamMate #3">
+										<div class="card-body">
+											<h5 class="card-title">TeamMate #3</h5>
+											<h6 class="card-subtitle mb-2">DEVELOPER</h6>
+											<p class="card-text">
+												Speaking Solidity.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="card space">
+										<img class="card-img-top" src="images/4.jpg" alt="TeamMate #4">
+										<div class="card-body">
+											<h5 class="card-title">TeamMate #4</h5>
+											<h6 class="card-subtitle mb-2">SPACEFLUENCER</h6>
+											<p class="card-text">
+												Master of none.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div>
-				<div class="col-12">
-					<div class="row bottom-menu">
+				<div class="col-12 bottom-menu">
+					<div class="row">
 						<div class="col-4">
-							<a href="#">
+							<a class="logo-bottom" href="#">
 								<img src="images/Logo_bottom.png" alt="Space Pirate Bottle" title="Space Pirate Bottle">
 							</a>
 						</div>
 						<div class="col-4">
-
+							<h5>Site navigation</h5>
+							<nav class="nav flex-column">
+								<a class="nav-link active" href="#">About</a>
+								<a class="nav-link active" href="#">Roadmap</a>
+								<a class="nav-link active" href="#">F.A.Q</a>
+								<a class="nav-link active" href="#">Team</a>
+							</nav>
 						</div>
 						<div class="col-4">
-
+							<h5>Community</h5>
+							<nav class="nav flex-column">
+								<a class="nav-link active" href="#">Twitter</a>
+								<a class="nav-link active" href="#">Discord</a>
+							</nav>
 						</div>
+					</div>
+					<div class="footer">
+						© Space Pirate Botles 2021.<br> All rights reserved
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="footer">
-				
-		</div>
-		
 		<script src="js/jquery-3.6.0.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script src="custom/scripts.js"></script>
 		<script>
-			$('.fly').each(function(){
+			$('.fly').each(function () {
 				Pirates.flyBlock(this, 10);
 			});
-			$('.scroll1').each(function(){
+			$('.scroll1').each(function () {
 				Pirates.scrollBlock(this, .3);
 			});
 			//Pirates.run();

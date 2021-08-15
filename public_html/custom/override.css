@@ -4,26 +4,346 @@ body {
 	font-family: Roboto, sans-serif;
 }
 
+.btn {
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: transparent
+}
+
+.btn-main {
+	width: 208px;
+	height: 40px;
+
+	background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(4, 1, 4, 0) 0.01%, #2C131D 100%);
+	border: 3px solid #9F3761;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 34px;
+}
+
+.btn-buy {
+	width: 130px;
+	height: 40px;
+
+	background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(4, 1, 4, 0) 0.01%, #182D3F 100%);
+	border: 3px solid #37729F;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 34px;
+}
+
+.btn-icon {
+	background: transparent;
+	border-radius: 0;
+}
+
+.sprite {
+	display: block;
+	background: transparent url('../images/sprites.png')
+}
+
+.sprite.sprite-menu {
+	width: 22px;
+	height: 22px;
+	background-position: -27px -1px;
+}
+
+.sn-holder .sprite-follow {
+	background: transparent;
+}
+
+.sprite.sprite-discord {
+	width: 20px;
+	height: 16px;
+	background-position: -50px -1px;
+}
+
+.sprite.sprite-twitter {
+	width: 20px;
+	height: 16px;
+	background-position: -71px -1px;
+}
+
 h1, h2 {
+	font-size: 24px;
 	text-align: center;
 	font-weight: bold;
 }
 
-h1 {
-	font-size: 60px;
+.top-logo {
+	margin-top: 14px;
+	margin-left: 20px;
+	margin-bottom: 14px;
+	display: inline-block;
 }
 
-h2 {
-	font-size: 54px;
-}
-
-.main-menu .nav {
-	padding-top: 30px;	
+.top-logo img {
+	width: 156px;
 }
 
 .main-menu .nav-link {
 	color: #454445;
 }
+
 .main-menu .nav-link.active {
 	color: #FFFFFF;
+}
+
+.menu-toggle {
+	margin-top: 23px;
+	margin-right: 2px;
+}
+
+.about {
+	padding-top: 26px;
+	background-image: url('../images/nebula1.jpeg');
+}
+.about .content {
+	padding: 0 20px;
+	margin-bottom: 20px;
+}
+.about .btn-main {
+	margin: 16px auto 0;
+	display: block;
+}
+
+.about .notify {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	color: rgba(255, 255, 255, 0.44);
+	padding-top: 146px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.count-form {
+	background: rgba(14, 32, 46, 0.86);
+	padding: 20px;
+}
+.count-form .delimiter {
+	display: block;
+	height: 2px;
+	background: linear-gradient(90deg, rgba(95, 150, 183, 0) 0%, rgba(255, 255, 255, 0.28) 50%, rgba(95, 150, 183, 0) 100%);
+}
+.btn-outline-secondary {
+	width: 45px;
+	height: 33px;
+
+	background: linear-gradient(0deg, #1A3D58 0%, #2C70A4 100%);
+	border: solid #193348;
+}
+
+.input-group-prepend .btn {
+	border-radius: 16px 0 0 16px;
+}
+
+.input-group-append .btn {
+	border-radius: 0 16px 16px 0;
+}
+.count-form .form-control {
+	background: linear-gradient(180deg, rgba(13, 28, 40, 0) 0%, rgba(38, 83, 118, 0.637534) 29.42%, rgba(38, 83, 118, 0.637534) 70.58%, rgba(13, 28, 40, 0) 100%);
+	border: none;
+	text-align: center;
+	height: 29px;
+	margin-top: 4px;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.count-form .btn-buy {
+	margin: 20px auto 0;
+	display: block;
+}
+
+.sn-holder {
+	margin: 20px 20px 38px;
+	background: #040104;
+	opacity: 0.7;
+	padding: 13px;
+}
+
+.sn-holder .icon-follow {
+	font-size: 12px;
+}
+
+.sn-holder .sprite-follow {
+	margin-right: 20px;
+}
+
+.sn-holder .sprite-discord {
+	margin-right: 12px;
+}
+
+.sn-holder .sprite-discord i, .sn-holder .sprite-twitter i {
+	margin-top: 3px;
+}
+
+.roadmap .content {
+	padding: 46px 20px 40px;
+}
+
+.roadmap h2 {
+	margin-bottom: 26px;
+}
+
+.cap {
+	display: block;
+	border: solid 3px rgba(255, 255, 255, .24);
+	height: 34px;	
+}
+
+.cap.cap-top {
+	border-bottom-width: 0;
+	border-radius: 21px 21px 0 0;
+}
+
+.cap.cap-bottom {
+	border-top-width: 0;
+	border-radius: 0 0 21px 21px;
+}
+
+.stage {
+	text-align: center;
+}
+
+.stage .value {
+	display: block;
+	height: 38px;
+	line-height: 38px;
+	width: 108px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	border: solid 6px #A32D62;
+	border-width: 0 6px 0 6px;
+	background: linear-gradient(90deg, rgba(163, 45, 98, .2) 0%, rgba(5, 1, 4, 0) 50%, rgba(163, 45, 98, .2) 100%);
+	margin: 0 auto 23px;
+}
+
+.stage .stage-title {
+	color: #A32D62;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.stage .stage-content {
+	font-size: 12px;
+}
+
+.stage.blue .value {
+	border-color: #2C6FA4;
+	background: linear-gradient(90deg, rgba(44, 111, 164, .2) 0%, rgba(5, 1, 4, 0) 50%, rgba(44, 111, 164, .2) 100%);
+}
+
+.stage.blue .stage-title {
+	color: #2C6FA4;
+}
+
+.stage.disabled {
+	color: #565456;
+}
+
+.stage.disabled .value {
+	border-color: #3F3E3F;
+	color: #565456;
+	background: linear-gradient(90deg, rgba(63, 62, 63, .2) 0%, rgba(5, 1, 4, 0) 50%, rgba(63, 62, 63, .2) 100%);
+}
+
+.stage.disabled .stage-title {
+	color: #454445;
+}
+
+.stage + .delimiter {
+	display: block;
+	background: #454345;
+	width: 4px;
+	height: 40px;
+	margin: 20px auto;
+}
+
+.faq {
+	background-image: url('../images/nebula1.jpeg');
+}
+
+.faq .content {
+	padding: 35px 20px 40px;
+}
+
+.faq h2 {
+	margin-bottom: 27px;
+}
+
+.faq .card {
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.24);
+	border-radius: 23px;
+	margin-bottom: 20px;
+}
+
+.faq .card .card-header {
+	padding: 16px 26px;
+	opacity: .4;
+}
+
+.team {
+	padding-top: 36px;
+}
+
+.team .card {
+	background-color: transparent;
+	width: 160px;
+	margin: 0 auto 48px;
+	text-align: center;
+}
+
+.team .card .card-img-top{
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	margin: 0 auto;
+}
+.team .card .card-body {
+	padding: 22px 0 0;
+}
+.team .card .card-title {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.team .card .card-subtitle {
+	color: #A32D62;
+}
+
+.team .card .card-text {
+	font-size: 14px;
+}
+
+.bottom-menu {
+	background-image: url('../images/nebula1.jpeg');
+}
+
+.bottom-menu .logo-bottom img{
+	width: 184px;
+}
+@media (min-width: 768px) {
+	h1, h2 {
+		text-align: center;
+		font-weight: bold;
+	}
+
+	h1 {
+		font-size: 60px;
+	}
+
+	h2 {
+		font-size: 54px;
+	}
+
+	.main-menu .nav {
+		padding-top: 30px;	
+	}
 }
