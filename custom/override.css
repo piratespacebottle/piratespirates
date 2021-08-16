@@ -3,7 +3,9 @@ body {
 	color: white;
 	font-family: Roboto, sans-serif;
 }
-
+.btn:focus {
+	box-shadow: none
+}
 .btn {
 	color: #FFF;
 	text-transform: uppercase;
@@ -15,7 +17,6 @@ body {
 .btn-main {
 	width: 208px;
 	height: 40px;
-
 	background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(4, 1, 4, 0) 0.01%, #2C131D 100%);
 	border: 3px solid #9F3761;
 	box-sizing: border-box;
@@ -26,7 +27,6 @@ body {
 .btn-buy {
 	width: 130px;
 	height: 40px;
-
 	background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(4, 1, 4, 0) 0.01%, #182D3F 100%);
 	border: 3px solid #37729F;
 	box-sizing: border-box;
@@ -109,6 +109,7 @@ border-radius: 34px;
 	background-color: rgba(4, 1, 4, 0.8);
 	width: 100%;
 	height: 100%;
+	z-index: 10;
 }
 
 .overlay .about-details {
@@ -160,6 +161,23 @@ border-radius: 34px;
 .about-details .close-holder button {
 	display: block;
 	margin: 0 auto;
+}
+
+.parallax {
+	position: relative;
+}
+.parallax .parallax-holder {
+	position:absolute; 
+	top:0; 
+	left:0; 
+	width: 100%; 
+	height: 100%; 
+	overflow: hidden;
+	z-index: 0;
+}
+.parallax .content {
+	position: relative;
+	z-index: 3;
 }
 
 h1, h2 {
@@ -416,13 +434,21 @@ h1, h2 {
 }
 
 .faq .card .card-header {
-	padding: 16px 26px;
+	padding: 0;
 	opacity: .4;
 }
 
 .faq .card .card-header .btn {
 	font-size: 16px;
 	text-align: left;
+	padding: 16px 50px 11px 26px;
+	text-transform: none;
+}
+
+.faq .card-body {
+	color: #D1D1D1;
+	font-size: 18px;
+	padding: 0 26px 26px 26px;
 }
 
 .team {
@@ -531,7 +557,7 @@ h1, h2 {
 	}
 	
 	.top-holder {
-		max-width: 900px;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
 
@@ -573,4 +599,180 @@ h1, h2 {
 		margin-left: -19px;
 		z-index: 1;
 	}
+	
+	.about {
+		padding-top: 65px;
+	}
+	
+	.about .btn-main {
+		width: 360px;
+		height: 68px;
+		font-weight: bold;
+		font-size: 28px;
+	}
+	
+	.about .notify {
+		font-weight: 500;
+		font-size: 24px;
+	}
+	
+	.about .sprite.sprite-follow {
+		/* background-image: url('../') */
+	}
+	
+	.count-form {
+		max-width: 922px;
+		margin: 0 auto;
+	}
+	
+	.roadmap .sprite-action {
+		width: 76px;
+		height: 148px;
+		background-position: -60px -20px;
+		top: -72px;
+	}
+	
+	.roadmap .content {
+		padding: 134px 0 80px;
+		max-width: 926px;
+		margin: 0 auto;
+	}
+	
+	.roadmap h2 {
+		margin-bottom: 49px;
+	}
+	
+	.stage .value {
+		width: 212px;
+		height: 64px;
+		border-width: 0 8px 0 8px;
+		font-size: 36px;
+		line-height: 64px;
+		margin-bottom: 39px;
+	}
+	
+	.stage .stage-title {
+		font-size: 24px;
+	}
+	
+	.stage .stage-content {
+		font-size: 20px;
+	}
+	
+	.stage + .delimiter {
+		width: 4px;
+		height: 64px;
+		margin-top: 32px;
+		margin-bottom: 32px;
+	}
+	
+	.faq .content {
+		padding-top: 71px;
+	}
+	
+	.faq h2 {
+		margin-bottom: 46px;
+	}
+	
+	.faq .card {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.faq .card .card-header .btn {
+		font-size: 23px;
+		padding: 23px 70px 20px 60px;
+	}
+	
+	.faq .card-body {
+		padding: 0px 60px 20px 60px;
+	}
+	.team {
+		padding-top: 65px;
+	}
+	
+	.team .content {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-bottom: 80px;
+	}
+	
+	.team h2 {
+		margin-bottom: 68px;
+	}
+	
+	.team .card {
+		width: 208px;
+	}
+	
+	.team .card .card-img-top {
+		width: 208px;
+		height: 208px;
+		border-radius: 104px;
+	}
+	
+	.team .card .card-text {
+		font-size: 18px;
+	}
+	
+	.footer {
+		padding-top: 60px;
+	}
+	
+	.footer .content {
+		margin: 0px;
+	}
+	
+	.footer > .content {
+		max-width: 1200px;
+		padding: 0;
+		margin: 0 auto;
+	}
+	
+	.footer .bottom-menu .content, .footer .sn .content {
+		width: auto;
+		margin: 0 60px;
+	}
+	
+	.footer .logo-bottom {
+		width: 326px;
+	}
+	
+	.footer .logo-bottom img {
+		width: 326px;
+	}
+	
+	.footer .delimiter {
+		position: absolute;
+		right: -2px;
+		width: 4px;
+		height: 100%;
+		top: -4px;
+		margin: 0;
+	}
+	
+	.footer .break-flex {
+		flex-basis: 100%;
+	}
+
+	.footer h5 {
+		font-size: 22px;
+	}
+	
+	.footer .nav-link {
+		font-size: 20px;
+	}
+	
+	.footer .bottom-menu .nav {
+		height: 105px;
+	}
+	
+	.footer .credit {
+		margin: 60px 40px 0;
+		border-top: 2px solid rgba(255, 255, 255, .14);
+		padding: 37px 0 60px;
+		font-size: 18px
+	}
+
 }
